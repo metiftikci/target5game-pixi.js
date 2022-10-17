@@ -1,5 +1,5 @@
 {
-  "name": "ScriptGame",
+  "name": "target5game",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode development",
@@ -9,6 +9,12 @@
     "lint:fix": "eslint ./src --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "gsap": "^3.11.3",
+    "pixi-filters": "4.2.0",
+    "pixi-webfont-loader": "^1.0.2",
+    "pixi.js": "^6.5.4"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",

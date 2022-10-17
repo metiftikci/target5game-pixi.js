@@ -5,6 +5,7 @@
     "target": "es5",
     "allowJs": false,
     "moduleResolution": "node",
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "esModuleInterop": true
   }
 }
