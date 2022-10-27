@@ -163,10 +163,11 @@ export default class Board {
 
   addListeners() {
     this.container.interactive = true;
-    this.container.on("mousemove", (e) => this.onMouseMove(e));
-    this.container.on("click", () => {
+    this.container.on("pointermove", (e) => this.onMouseMove(e));
+    this.container.on("pointertap", (e) => {
       if (this.lock.locked) return;
 
+      this.onMouseMove(e);
       this.onClick();
     });
   }
