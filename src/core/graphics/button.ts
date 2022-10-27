@@ -34,7 +34,7 @@ export class Button {
 
     this.graphics.on("mouseover", () => this.onOver());
     this.graphics.on("mouseout", () => this.onOut());
-    this.graphics.on("click", () => {
+    this.graphics.on("pointertap", () => {
       if (typeof props.onClick === "function") {
         props.onClick();
       }
